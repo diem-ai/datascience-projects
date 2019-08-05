@@ -1,17 +1,17 @@
 # Customer Segmentation
 
 ## Table of content
-1. [Motivation](https://github.com/diem-ai/user-segment#1-motivation)
-2. [Data Exploration](https://github.com/diem-ai/user-segment#2-data-exploration)
-    - [Data Source](https://github.com/diem-ai/user-segment#data-source)
-    - [Data Structure](https://github.com/diem-ai/user-segment#data-structure)
-    - [Data Distribution](https://github.com/diem-ai/user-segment#data-distribution)
-    - [Normalization & Outliers Detection](https://github.com/diem-ai/user-segment#normalization--outliers-detection)
-3. [Feature Engineering](https://github.com/diem-ai/user-segment#3-feature-engineering)
-4. [Clustering with Agglomerative Clustering](https://github.com/diem-ai/user-segment#4-clustering-with-agglomerative-clustering-algorithm)
-5. [Files Description](https://github.com/diem-ai/user-segment#5-file-description)
-6. [Installation](https://github.com/diem-ai/user-segment#6-installation)
-7. [Run in Local](https://github.com/diem-ai/user-segment#7-run-in-local)
+1. [Motivation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#1-motivation)
+2. [Data Exploration](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#2-data-exploration)
+    - [Data Source](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-source)
+    - [Data Structure](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-structure)
+    - [Data Distribution](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-distribution)
+    - [Normalization & Outliers Detection](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#normalization--outliers-detection)
+3. [Feature Engineering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#3-feature-engineering)
+4. [Clustering with Agglomerative Clustering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#4-clustering-with-agglomerative-clustering-algorithm)
+5. [Files Description](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#5-file-description)
+6. [Installation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#6-installation)
+7. [Run in Local](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
 
 ##
 

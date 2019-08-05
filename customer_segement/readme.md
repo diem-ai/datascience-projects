@@ -51,7 +51,12 @@ The customer segments data is included as a selection of 440 data points collect
 
 ![](https://github.com/diem-ai/user-segment/blob/master/results/BoxCox.PNG)
 
-- Outliers Detection & Deletion: I use <code>Numeric Outlier</code> method because it is simple and it can work well because data is already transformed.
+- Outliers Detection & Deletion: 
+    - There are many techniques to detect and optionally remove outliers: Numeric Outlier, Z-Score, DBSCAN and Isolation Forest.
+        - Numeric Outlier: This is the simplest, nonparametric outlier detection method in a one dimensional feature space. Outliers are calculated by means of the IQR (InterQuartile Range) with interquartile multiplier value k=1.5.
+        - Z-score is a parametric outlier detection method in a one or low dimensional feature space. This technique assumes a Gaussian distribution of the data. The outliers are the data points that are in the tails of the distribution and therefore far from the mean
+        - DBSCAN: This technique is based on the DBSCAN clustering method. DBSCAN is a non-parametric, density based outlier detection method in a one or multi dimensional feature space. This is a non-parametric method for large datasets in a one or multi dimensional feature space
+    - I use <code>Numeric Outlier</code> method because it is simple and it can work well with normalized data.
 
 ### 3. Feature Engineering
 - Using `PCA (Principal Components Analysis)` in sklearn to extract the important features in the dataset. When using principal component analysis, one of the main goals is to reduce the dimensionality of the data — in effect, reducing the complexity of the problem. Dimensionality reduction comes at a cost: Fewer dimensions used implies less of the total variance in the data is being explained.

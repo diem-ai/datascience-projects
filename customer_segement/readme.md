@@ -121,7 +121,7 @@ The customer segments data is included as a selection of 440 data points collect
 ### 3. Feature Engineering
 - Using `PCA (Principal Components Analysis)` in sklearn to extract the important features in the dataset. When using principal component analysis, one of the main goals is to reduce the dimensionality of the data — in effect, reducing the complexity of the problem. Dimensionality reduction comes at a cost: Fewer dimensions used implies less of the total variance in the data is being explained.
 ![](https://github.com/diem-ai/user-segment/blob/master/results/PCA.PNG)
-- The plot above clearly shows that most of the variance (<b>87.48%</b> of the variance to be precise) can be explained by the first principal component alone. The second principal component still bears some information (<b>6.79%</b>) while the third, fourth, fifth and sixth principal components can safely be dropped without losing to much information. Together, the first two principal components contain 94.27% of the information.
+- Observation: The plot above clearly shows that most of the variance (<b>87.48%</b> of the variance to be precise) can be explained by the first principal component alone. The second principal component still bears some information (<b>6.79%</b>) while the third, fourth, fifth and sixth principal components can safely be dropped without losing to much information. Together, the first two principal components contain 94.27% of the information.
 - Now we redo PCA on dataset with only 2 components. Prior to that, it makes sense to standardize the data, especially, if it was measured on different scales. 2 in 1, we have the result below:
 
 ![](https://github.com/diem-ai/user-segment/blob/master/results/Standadize_PCA.PNG)

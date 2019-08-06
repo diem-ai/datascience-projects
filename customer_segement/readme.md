@@ -5,7 +5,7 @@
 2. [Data Exploration](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#2-data-exploration)
     - [Data Source](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-source)
     - [Data Structure](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-structure)
-    - [Data Distribution](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-distribution)
+    - [Data Distribution & Observation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-distribution)
     - [Normalization & Outliers Detection](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#normalization--outliers-detection)
 3. [Feature Engineering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#3-feature-engineering)
 4. [Clustering with Agglomerative Clustering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#4-clustering-with-agglomerative-clustering-algorithm)

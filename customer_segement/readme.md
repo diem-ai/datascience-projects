@@ -69,7 +69,9 @@ The customer segments data is included as a selection of 440 data points collect
 
     plt.show()
     ```
-![](https://github.com/diem-ai/user-segment/blob/master/results/BoxCox.PNG)
+    ![](https://github.com/diem-ai/user-segment/blob/master/results/BoxCox.PNG)
+
+- Observation: After applying a Box-Cox lscaling to the data, the distribution of each feature should appear much more normal. For any pairs of features we may have identified earlier as still being correlated
 
 - Outliers Detection & Deletion: 
     - There are many techniques to detect and optionally remove outliers: Numeric Outlier, Z-Score and DBSCAN.

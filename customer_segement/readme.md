@@ -55,8 +55,20 @@ The customer segments data is included as a selection of 440 data points collect
 #### Normalization & Outliers Detection
 - One of the big challenge of this project is to deal with outliers and skewed distribution. Anomalies, or outliers, can be a serious issue when training machine learning algorithms or applying statistical techniques. They are often the result of errors in measurements or exceptional system conditions and therefore do not describe the common functioning of the underlying system. Indeed, the best practice is to implement an outlier removal phase before proceeding with further analysis.
 
-- Normalizing data:  In this project, I will use `Box-Cox` test implemented from `scipy.stats.boxcox`. The `Box Cox` transformation is used to stabilize the variance (eliminate heteroskedasticity) and also to (multi)normalize a distribution. We shall observe the transformed data again in scatter plot to see how well it is rescaled.
+- Normalizing data:  In this project, I will use `Box-Cox` test implemented from `scipy.stats.boxcox`. The `Box Cox` transformation is used to stabilize the variance (eliminate heteroskedasticity) and also to (multi)normalize a distribution. We shall observe the transformed data again in scatter plot to see how well it is rescaled: 
+```
+# Filter out Channel and Region columns from dataset
+data = data[features]
 
+# Using stats.boxcox to rescale all features
+for label in features:
+  data[label],_ = stats.boxcox(data[label])
+
+# Replot transformed data
+pd.plotting.scatter_matrix(data, alpha = 0.3, figsize = (14,8), diagonal = 'kde')
+
+plt.show()
+```
 ![](https://github.com/diem-ai/user-segment/blob/master/results/BoxCox.PNG)
 
 - Outliers Detection & Deletion: 

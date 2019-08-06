@@ -36,20 +36,24 @@ The customer segments data is included as a selection of 440 data points collect
 #### Data Distribution
 ![](https://github.com/diem-ai/user-segment/blob/master/results/data_describe.PNG)
 - Observation: the mean & standard deviation are high among features. We can probably guess that data is noisy and skewed.
-- How are sales of product distributed in channels?
+- Question: How are sales of product distributed in channels?
 
 ![](https://github.com/diem-ai/user-segment/blob/master/results/channel_distributed.PNG)
 
 - Observation: As we can see, Fresh is largely distributed in Hotel/Restaurant/Cafe meanwhile Grocery is highly propotioned in distribution of Retail, following is Milk, Fresh and Detergents_Paper products. Both channels sold very few Delicatessen and Frozen products
 
-#### Normalization & Outliers Detection
-- One of the big challenge of this project is to deal with outliers and skewed distribution. Anomalies, or outliers, can be a serious issue when training machine learning algorithms or applying statistical techniques. They are often the result of errors in measurements or exceptional system conditions and therefore do not describe the common functioning of the underlying system. Indeed, the best practice is to implement an outlier removal phase before proceeding with further analysis.
-
-![](https://github.com/diem-ai/user-segment/blob/master/results/data_distribution.PNG)
-
-- Observation:
+- Question: Is there any degree of correlation of pairs of feature? In another words, can sale of one product impacted to others? Is the data distributed normal?
+    - To get a better understanding of the dataset, we can construct a scatter matrix of each of the six product features present in the data. If you found that the feature you attempted to predict above is relevant for identifying a specific customer, then the scatter matrix below may not show any correlation between that feature and the others. 
+    - Conversely, if you believe that feature is not relevant for identifying a specific customer, the scatter matrix might show a correlation between that feature and another feature in the data
+    
+    ![](https://github.com/diem-ai/user-segment/blob/master/results/data_distribution.PNG)
+ - Observation:
     - From the scatter matrix, it can be observed that that the pair (Grocery, Detergents_Paper) seems to have the strongest correlation. The pair (Grocery, Milk)  and (Detegerns_Paper, Milk) salso seem to exhibit some degree of correlation. This scatter matrix also confirms my initial suspicions that Fresh, Frozen and Delicatessen product category donr not have significant correlations to any of the remaining features. 
     - Additionally, this scater matrix also show us that the data for these features is highly skewed and not normaly distributed.
+
+
+#### Normalization & Outliers Detection
+- One of the big challenge of this project is to deal with outliers and skewed distribution. Anomalies, or outliers, can be a serious issue when training machine learning algorithms or applying statistical techniques. They are often the result of errors in measurements or exceptional system conditions and therefore do not describe the common functioning of the underlying system. Indeed, the best practice is to implement an outlier removal phase before proceeding with further analysis.
 
 - Normalizing data:  In this project, I will use `Box-Cox` test implemented from `scipy.stats.boxcox`. The `Box Cox` transformation is used to stabilize the variance (eliminate heteroskedasticity) and also to (multi)normalize a distribution. We shall observe the transformed data again in scatter plot to see how well it is rescaled.
 

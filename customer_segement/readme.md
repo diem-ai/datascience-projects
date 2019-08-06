@@ -47,6 +47,10 @@ The customer segments data is included as a selection of 440 data points collect
 
 ![](https://github.com/diem-ai/user-segment/blob/master/results/data_distribution.PNG)
 
+- Observation:
+    - From the scatter matrix, it can be observed that that the pair (Grocery, Detergents_Paper) seems to have the strongest correlation. The pair (Grocery, Milk)  and (Detegerns_Paper, Milk) salso seem to exhibit some degree of correlation. This scatter matrix also confirms my initial suspicions that Fresh, Frozen and Delicatessen product category donr not have significant correlations to any of the remaining features. 
+    - Additionally, this scater matrix also show us that the data for these features is highly skewed and not normaly distributed.
+
 - Normalizing data:  In this project, I will use `Box-Cox` test implemented from `scipy.stats.boxcox`. The `Box Cox` transformation is used to stabilize the variance (eliminate heteroskedasticity) and also to (multi)normalize a distribution. We shall observe the transformed data again in scatter plot to see how well it is rescaled.
 
 ![](https://github.com/diem-ai/user-segment/blob/master/results/BoxCox.PNG)

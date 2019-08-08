@@ -9,7 +9,7 @@
 ### Data Structure
 ### Data Distribution
 ### Preprocessing Data
-## 3. Machine Learning Modeling
+## 3. Machine Learning Pipeline
 ### Term Frequency Document Matrix
 - Machine doesn't understand the text. We have to transform reviews into sparse matrix or term-document matrix.
 - The term-document matrix then is a two-dimensional matrix whose rows are the terms and columns are the documents, so each entry (i, j) represents the frequency of term i in document j.

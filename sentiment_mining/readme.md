@@ -19,6 +19,52 @@
 ### Cross Validation
 - Cross Validation is a very useful technique for assessing the effectiveness of our model, particularly in cases where we need to mitigate overfitting. It is applied to more subsets created using the training dataset and each of which is used to train and evaluate a separate model
 - In this project, I shall split x_train into 3 folds. We have 3 models runing through 3 subsets and the ith model will be built on the union of all subsets except the ith
+### Gridsearch
+- In Logistic Regression, there are many parameters and each parameter has several values. Using grid search to find the best parameters and their values that can minimize the error funtion. 
+
+- Put all in pipeline with the execution in order:
+
+```
+def grid_search(x_train, y_train, pipeline,  parameters,n_cv):
+    """
+    Perform GridSearchCV
+    
+    Arg:
+        train_x, train_y: train set samples
+        parameters: classifier's parameters
+        pipeline: Pipeline object with classifer
+    
+    Return classifier with best estimator
+    
+    """
+    t0 = time()
+
+    grid_search_tune = GridSearchCV(pipeline
+                                    , parameters
+                                    , cv=n_cv
+                                    , n_jobs=-1)
+    
+    grid_search_tune.fit(x_train, y_train)
+    print("done in %0.3fs" % (time() - t0))
+    print()    
+    return grid_search_tune
+
+pipeline = Pipeline([
+                        ('tfidf', TfidfVectorizer(token_pattern='(\S+)'))
+                        ,('clf', LogisticRegression())
+                    ])
+parameters = {
+    "tfidf__max_df": (0.5, 0.75, 0.95),
+    "tfidf__ngram_range": [(1, 1), (1, 2), (1, 3)],
+    "clf__C": [0.001, 0.01, 0.1],
+    "clf__solver":["newton-cg", "lbfgs", "liblinear"]
+}
+
+lrg_gridsearch = grid_search(x_train, y_train, pipeline, parameters, n_cv=3)
+```
+
+### Evaluation
+
 ### Randome Forest with Default Parameters
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.
 - We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.

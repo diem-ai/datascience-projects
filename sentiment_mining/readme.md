@@ -6,7 +6,6 @@
 ## 1. Motivation
 
 ## 2. Data Exploration
-### Data Souce
 ### Data Structure
 ### Data Distribution
 ### Preprocessing Data
@@ -26,6 +25,7 @@
 ### Tuning parameter with GridSearch CV
 #### Conclusion
 ## 4. Topic Modeling with Latent Dirichlet Allocation
+## 5. Reference
 
 
 

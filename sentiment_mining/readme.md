@@ -5,7 +5,7 @@
 
 ## 1. Motivation
 
-## 2. Data
+## 2. Data Exploration
 ### Data Souce
 ### Data Structure
 ### Data Distribution

@@ -11,10 +11,10 @@
 ### Data Distribution
 ### Preprocessing Data
 ## 3. Machine Learning Modeling
-#### Term Frequency Document Matrix
-#### Logistic Regession with Default Parameters
-#### Randome Forest with Default Parameters
-#### Tuning parameter with GridSearch CV
+### Term Frequency Document Matrix
+### Logistic Regession with Default Parameters
+### Randome Forest with Default Parameters
+### Tuning parameter with GridSearch CV
 #### Conclusion
 
 

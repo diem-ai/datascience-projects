@@ -12,6 +12,7 @@
 5. [Files Description](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#5-file-description)
 6. [Installation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#6-installation)
 7. [Run in Local](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
+8. Reference
 
 ##
 
@@ -180,3 +181,7 @@ ipython notebook customer_segment.ipynb
 jupyter notebook customer_segment.ipynb
 ```
 - Notebook will be opened in your default browser.
+
+### 7. Reference
+- Machine Learning Nano degree Udacity
+

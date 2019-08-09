@@ -22,6 +22,28 @@
 
 - Observation
 From histogram chart, it is observed that most of the ratings are pretty high at 4 or 5 ranges. It means buyers thought that products are qualified
+
+2) Review length distribution
+- For each review, we will count how many words and add it as new feature for the data exploratory analysis and how length is distributed according to ratings.
+
+```
+products.dropna(inplace=True)
+products['review_len'] = products['review'].apply(lambda x : len(x))
+
+# Plot review length on histrogram with seaborn
+sns.distplot(products['review_len'])
+plt.title("Review Length Distribution")
+plt.ylabel("Frequency")
+plt.xlabel("Review Length")
+plt.show()
+
+products.groupby(['rating'])['review_len'].mean().plot(kind='barh')
+plt.ylabel('Ratings')
+plt.xlabel('Average of Review Length')
+plt.show()
+
+```
+
  
 ### Preprocessing Data
 - The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 

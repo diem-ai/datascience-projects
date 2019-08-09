@@ -13,6 +13,10 @@
     - review (string): feeback of customers who bought the products
     - rating (integer): value is from 1 to 5 that shows how customers rate the product's quality
 ### Data Distribution
+- Have a look at data structure, some questions come to my mind:
+    - How are ratings distributed?  
+    - Is there any difference of reviews length/words counts between ratings? I guess that people will leave posstive feebacks longer than negative feedbacks.
+ 
 ### Preprocessing Data
 - The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 
 ## 3. Machine Learning Pipeline

@@ -20,7 +20,7 @@
 ### Cross Validation
 - Cross Validation is a very useful technique for assessing the effectiveness of our model, particularly in cases where we need to mitigate overfitting. It is applied to more subsets created using the training dataset and each of which is used to train and evaluate a separate model
 - In this project, I shall split x_train into 3 folds. We have 3 models runing through 3 subsets and the ith model will be built on the union of all subsets except the ith
-### Gridsearch
+### Tuning parameters with Gridsearch
 - In Logistic Regression, there are many parameters and each parameter has several values. Using grid search to find the best parameters and their values that can minimize the error funtion. 
 
 - Put all in pipeline with the execution in order:
@@ -69,7 +69,6 @@ lrg_gridsearch = grid_search(x_train, y_train, pipeline, parameters, n_cv=3)
 ### Randome Forest with Default Parameters
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.
 - We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.
-### Tuning parameter with GridSearch CV
 #### Conclusion
 ## 4. Topic Modeling with Latent Dirichlet Allocation
 ## 5. Reference

@@ -43,7 +43,11 @@ plt.xlabel('Average of Review Length')
 plt.show()
 
 ```
+![](https://github.com/diem-ai/datascience-projects/blob/master/sentiment_mining/images/rev_len_dist.PNG)![](https://github.com/diem-ai/datascience-projects/blob/master/sentiment_mining/images/rev_len_rat_dist.PNG)
 
+- Obseration
+    - There were quite number of people like to leave long reviews
+    - The higher rating was, the fewer words the reviews were
  
 ### Preprocessing Data
 - The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 

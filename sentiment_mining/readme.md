@@ -151,9 +151,10 @@ Pipeline(memory=None,
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.
 - We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.
 #### Conclusion
-## 4. Topic Modeling with Latent Dirichlet Allocation
+## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
 ## 5. Reference
-
+- [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+- Dataset and the explanation of Logistic Regression : Machine Learning Course - University of Washington
 
 
 

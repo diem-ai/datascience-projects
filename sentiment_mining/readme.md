@@ -10,6 +10,7 @@
 ### Data Structure
 ### Data Distribution
 ### Preprocessing Data
+- The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 
 ## 3. Machine Learning Pipeline
 ### Split Dataset into train/set
 - Divide dataset into 80% train and 20% test. 

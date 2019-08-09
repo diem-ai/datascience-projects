@@ -152,6 +152,95 @@ Pipeline(memory=None,
 - We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.
 #### Conclusion
 ## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
+- Topic modeling is a type of statistical model that is used to extract topics that are collections of words collection of documents. Latent Dirichlet Allocation is one of implementation of Topic Modelling.
+- Latent Dirichlet allocation (LDA) is a topic model that generates topics based on word frequency from a set of documents. LDA is particularly useful for finding reasonably accurate mixtures of topics within a given document set.
+- In this project, I will use `gensim.models.ldamodel` to cluster the similar topics in reviews.
+````
+#import library
+from gensim.models.ldamodel import LdaModel
+import gensim.corpora as corpora
+from gensim.corpora import Dictionary as gendict
+
+# create dictionary(id, word) from document
+dictionary = gendict([rev.split() for rev in reviews])
+# create bag of word corpus from the dictionary and entire document
+bow_corpus =  [dictionary.doc2bow(rev.split()) for rev in reviews]
+# Train the model on the bag of word corpus
+# 
+lda = LdaModel(bow_corpus
+               , num_topics=5 # numer of topics generated
+              , id2word=dictionary
+              , iterations = 100)
+lda.print_topics()
+````
+- At the first try, the model will output 5 topics from the dataset as the result:
+````
+[(0,
+  '0.016*"bag" + 0.011*"diaper" + 0.010*"like" + 0.009*"use" + 0.007*"great" + 0.006*"well" + 0.006*"diapers" + 0.006*"love" + 0.006*"case" + 0.005*"product"'),
+ (1,
+  '0.006*"product" + 0.006*"put" + 0.006*"baby" + 0.006*"back" + 0.005*"use" + 0.005*"like" + 0.005*"easy" + 0.004*"could" + 0.004*"open" + 0.004*"way"'),
+ (2,
+  '0.022*"baby" + 0.015*"great" + 0.014*"love" + 0.011*"little" + 0.010*"loves" + 0.010*"old" + 0.009*"like" + 0.008*"daughter" + 0.008*"cute" + 0.007*"well"'),
+ (3,
+  '0.030*"seat" + 0.018*"car" + 0.015*"stroller" + 0.013*"easy" + 0.008*"baby" + 0.008*"great" + 0.008*"love" + 0.008*"like" + 0.007*"back" + 0.007*"use"'),
+ (4,
+  '0.013*"monitor" + 0.012*"baby" + 0.010*"use" + 0.009*"bottle" + 0.009*"great" + 0.008*"bottles" + 0.007*"like" + 0.007*"cup" + 0.006*"pump" + 0.006*"time"')]
+````
+- Interpretation:
+    - Topic 1: bags and diapers products and their quality is great
+    - Topic 2: products are easy to use for baby
+    - Topic 3: the same to topic 2
+    - Topic 4: toys like: car, seat and stroller
+T   - Topic 5: another products of baby: monitor, bottles , cup and pumps. It is similar to topic 1
+
+- Finally, we have 3 different topics at the first try. We will try with numer of topics = 10 to see if we can find out some other interesting topics.
+
+````
+lda = LdaModel(bow_corpus
+               , num_topics=10
+              , id2word=dictionary
+              , iterations = 100)
+ 
+topics = lda.print_topics(num_topics=10, num_words=10)
+
+for (idx, topic) in topics:
+  print("topic: {}\n{}".format(idx+1, topic))
+
+topic: 1
+0.026*"love" + 0.025*"great" + 0.022*"little" + 0.020*"cute" + 0.017*"baby" + 0.014*"perfect" + 0.013*"nice" + 0.012*"loves" + 0.012*"like" + 0.012*"well"
+topic: 2
+0.023*"stroller" + 0.009*"like" + 0.008*"easy" + 0.007*"back" + 0.006*"really" + 0.006*"use" + 0.005*"easily" + 0.005*"little" + 0.005*"side" + 0.005*"small"
+topic: 3
+0.033*"seat" + 0.019*"car" + 0.018*"old" + 0.012*"baby" + 0.010*"son" + 0.009*"loves" + 0.009*"daughter" + 0.008*"little" + 0.008*"like" + 0.007*"love"
+topic: 4
+0.031*"baby" + 0.020*"product" + 0.016*"quality" + 0.014*"great" + 0.013*"received" + 0.012*"gift" + 0.011*"good" + 0.011*"love" + 0.010*"made" + 0.010*"price"
+topic: 5
+0.027*"monitor" + 0.014*"baby" + 0.013*"night" + 0.009*"sound" + 0.008*"unit" + 0.008*"room" + 0.008*"time" + 0.008*"video" + 0.007*"product" + 0.007*"battery"
+topic: 6
+0.029*"bag" + 0.021*"diaper" + 0.013*"use" + 0.011*"diapers" + 0.010*"like" + 0.007*"bags" + 0.007*"cloth" + 0.006*"case" + 0.006*"ve" + 0.006*"dry"
+topic: 7
+0.021*"baby" + 0.020*"crib" + 0.017*"soft" + 0.013*"blanket" + 0.012*"sleep" + 0.011*"bed" + 0.011*"cover" + 0.010*"mattress" + 0.010*"pillow" + 0.009*"night"
+topic: 8
+0.008*"product" + 0.007*"britax" + 0.005*"you" + 0.005*"install" + 0.004*"back" + 0.004*"piece" + 0.004*"together" + 0.004*"box" + 0.004*"make" + 0.004*"put"
+topic: 9
+0.021*"bottle" + 0.018*"bottles" + 0.016*"cup" + 0.014*"pump" + 0.012*"cups" + 0.011*"use" + 0.009*"milk" + 0.009*"water" + 0.009*"baby" + 0.008*"like"
+topic: 10
+0.050*"easy" + 0.021*"food" + 0.020*"use" + 0.019*"clean" + 0.019*"great" + 0.019*"chair" + 0.018*"love" + 0.012*"tray" + 0.011*"high" + 0.010*"baby"
+````
+- Intepretation
+    - topic 1: possitive feedbacks for baby products
+    - topic 2: stroller and easy use
+    - topic 3: baby girl loves car toys
+    - topic 4: products have good price. It is quite duplicated with topic 1
+    - topic 5: video game
+    - topic 6: baby cloths
+    - topic 7: sleepping products
+    - topic 8: seating products for baby (britax). It is similar to topic 2
+    - topic 9: cater products (bottles, cup, milk, water)
+    - topic 10: good feedbacks. The same to topic 1
+- At the end, we have 8 topics after tunning parameters and the result sounds interesting.
+
+
 ## 5. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington

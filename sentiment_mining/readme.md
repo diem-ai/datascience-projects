@@ -116,6 +116,34 @@ parameters = {
 
 lrg_gridsearch = grid_search(x_train, y_train, pipeline, parameters, n_cv=3)
 ```
+- The running process took around 10990.079s, we got the optimized parameters from Gris search:
+```
+lrg_gridsearch.best_estimator_
+
+Pipeline(memory=None,
+         steps=[('tfidf',
+                 TfidfVectorizer(analyzer='word', binary=False,
+                                 decode_error='strict',
+                                 dtype=<class 'numpy.float64'>,
+                                 encoding='utf-8', input='content',
+                                 lowercase=True, max_df=0.5, max_features=None,
+                                 min_df=1, ngram_range=(1, 1), norm='l2',
+                                 preprocessor=None, smooth_idf=True,
+                                 stop_words=None, strip_accents=None,
+                                 sublinear_tf=False, token_pattern='(\\S+)',
+                                 tokenizer=None, use_idf=True,
+                                 vocabulary=None)),
+                ('clf',
+                 LogisticRegression(C=0.1, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=100,
+                                    multi_class='warn', n_jobs=None,
+                                    penalty='l2', random_state=None,
+                                    solver='liblinear', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False)
+```
+
 
 ### Evaluation
 

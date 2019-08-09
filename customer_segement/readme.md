@@ -12,7 +12,7 @@
 5. [Files Description](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#5-file-description)
 6. [Installation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#6-installation)
 7. [Run in Local](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
-8. [Reference]((https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local))
+8. [Reference](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
 
 ##
 

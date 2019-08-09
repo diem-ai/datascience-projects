@@ -191,7 +191,7 @@ lda.print_topics()
     - Topic 2: products are easy to use for baby
     - Topic 3: the same to topic 2
     - Topic 4: toys like: car, seat and stroller
-T   - Topic 5: another products of baby: monitor, bottles , cup and pumps. It is similar to topic 1
+    - Topic 5: another products of baby: monitor, bottles , cup and pumps. It is similar to topic 1
 
 - Finally, we have 3 different topics at the first try. We will try with numer of topics = 10 to see if we can find out some other interesting topics.
 
@@ -230,7 +230,7 @@ topic: 10
 - Intepretation
     - topic 1: possitive feedbacks for baby products
     - topic 2: stroller and easy use
-    - topic 3: baby girl loves car toys
+    - topic 3: baby girls love car toys
     - topic 4: products have good price. It is quite duplicated with topic 1
     - topic 5: video game
     - topic 6: baby cloths

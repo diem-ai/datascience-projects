@@ -37,16 +37,13 @@ The customer segments data is included as a selection of 440 data points collect
 ![](https://github.com/diem-ai/user-segment/blob/master/results/data_describe.PNG)
 - Observation: the mean & standard deviation are high among features. We can probably guess that data is noisy and skewed.
 - Question: How are sales of product distributed in channels?
-
 ![](https://github.com/diem-ai/user-segment/blob/master/results/channel_distributed.PNG)
-
 - Observation: As we can see, Fresh is largely distributed in Hotel/Restaurant/Cafe meanwhile Grocery is highly propotioned in distribution of Retail, following is Milk, Fresh and Detergents_Paper products. Both channels sold very few Delicatessen and Frozen products
 
 - Question: Is there any degree of correlation of pairs of feature? In another words, can sale of one product impacted to others? Is the data distributed normal?
     - To get a better understanding of the dataset, we can construct a scatter matrix of each of the six product features present in the data. If you found that the feature you attempted to predict above is relevant for identifying a specific customer, then the scatter matrix below may not show any correlation between that feature and the others. 
     - Conversely, if you believe that feature is not relevant for identifying a specific customer, the scatter matrix might show a correlation between that feature and another feature in the data
-    
-    ![](https://github.com/diem-ai/user-segment/blob/master/results/data_distribution.PNG)
+       ![](https://github.com/diem-ai/user-segment/blob/master/results/data_distribution.PNG)
  - Observation:
     - From the scatter matrix, it can be observed that that the pair (Grocery, Detergents_Paper) seems to have the strongest correlation. The pair (Grocery, Milk)  and (Detegerns_Paper, Milk) salso seem to exhibit some degree of correlation. This scatter matrix also confirms my initial suspicions that Fresh, Frozen and Delicatessen product category donr not have significant correlations to any of the remaining features. 
     - Additionally, this scater matrix also show us that the data for these features is highly skewed and not normaly distributed.

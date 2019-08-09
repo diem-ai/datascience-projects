@@ -21,7 +21,7 @@
 ![](https://github.com/diem-ai/datascience-projects/blob/master/sentiment_mining/images/raings_distribution.PNG)
 
 - Observation
-From histogram chart, it is observed that most of the ratings are pretty high at 4 or 5 ranges. It means buyers thought that products are qualified
+    - From histogram chart, it is observed that most of the ratings are pretty high at 4 or 5 ranges. It means buyers thought that products are qualified
 
 2) Review length distribution
 - For each review, we will count how many words and add it as new feature for the data exploratory analysis and how length is distributed according to ratings.

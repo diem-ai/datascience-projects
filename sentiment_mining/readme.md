@@ -10,9 +10,9 @@
 ### Data Structure
 - Dataset has 183531 datapoints and 3 columns: name, review and rating
 - Feature description:
-    - name: product name
-    - review: feeback of customers who bought the products
-    - rating: value is from 1 to 5 that shows how customers rate the product's quality
+    - name (string): product name
+    - review (string): feeback of customers who bought the products
+    - rating (integer): value is from 1 to 5 that shows how customers rate the product's quality
 ### Data Distribution
 ### Preprocessing Data
 - The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 

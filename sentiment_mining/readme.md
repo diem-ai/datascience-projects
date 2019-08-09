@@ -155,6 +155,7 @@ Pipeline(memory=None,
 ## 5. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington
+- [LDA's documentation by gensim](https://radimrehurek.com/gensim/models/ldamodel.html#usage-examples)
 
 
 

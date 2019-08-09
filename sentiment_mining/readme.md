@@ -154,7 +154,7 @@ Pipeline(memory=None,
 ## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
 ## 5. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
-- Dataset and the explanation of Logistic Regression : Machine Learning Course - University of Washington
+- Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington
 
 
 

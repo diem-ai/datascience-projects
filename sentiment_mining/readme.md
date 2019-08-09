@@ -11,6 +11,18 @@
 ### Data Distribution
 ### Preprocessing Data
 ## 3. Machine Learning Pipeline
+### Split Dataset into train/set
+- Divide dataset into 80% train and 20% test. 
+```
+train, test = train_test_split(data, test_size=0.2, random_state=0)
+
+x_train = train['clean_review']
+y_train = train['sentiment']
+
+x_test = test['clean_review']
+y_test = test['sentiment']
+
+```
 ### Term Frequency Document Matrix
 - Machine doesn't understand the text. We have to transform reviews into sparse matrix or term-document matrix.
 - The term-document matrix then is a two-dimensional matrix whose rows are the terms and columns are the documents, so each entry (i, j) represents the frequency of term i in document j.

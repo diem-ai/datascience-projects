@@ -1,7 +1,6 @@
 
 
-
-
+# Mining the sentiments in review's products & Unpacking the topics in customer's reviews
 
 ## 1. Motivation
 - Somehow, I'm interested in what customers think about products after they bought them. I want to know which products feedbacks are positive and negative in a month so that I can develop or adjust the marketing or promotion campaign. 

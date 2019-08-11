@@ -11,7 +11,8 @@
 4. [Clustering with Agglomerative Clustering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#4-clustering-with-agglomerative-clustering-algorithm)
 5. [Files Description](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#5-file-description)
 6. [Installation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#6-installation)
-7. [Run in Local](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
+7. [Run code/Notebook in Local](#7-run-in-local)
+7. [Run code/Notebook in Google Colab](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
 8. [Reference](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
 
 ##

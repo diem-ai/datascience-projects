@@ -20,7 +20,7 @@
     - Is there any difference of reviews length/words counts between ratings? I guess that people will leave posstive feebacks longer than negative feedbacks.
 1) Ratings distribution
 
-![](/raings_distribution.PNG)
+![](/images/raings_distribution.PNG)
 
 - Observation
     - From histogram chart, it is observed that most of the ratings are pretty high at 4 or 5 ranges. It means buyers thought that products are qualified

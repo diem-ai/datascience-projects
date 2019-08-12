@@ -179,6 +179,7 @@ weighted avg       0.80      0.83      0.78     36541
 - Topic modeling is a type of statistical model that is used to extract topics that are collections of words collection of documents. Latent Dirichlet Allocation is one of implementation of Topic Modelling.
 - Latent Dirichlet allocation (LDA) is a topic model that generates topics based on word frequency from a set of documents. LDA is particularly useful for finding reasonably accurate mixtures of topics within a given document set.
 - In this project, I will use `gensim.models.ldamodel` to cluster the similar topics in reviews.
+
 ````
 #import library
 from gensim.models.ldamodel import LdaModel

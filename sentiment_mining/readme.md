@@ -170,6 +170,7 @@ weighted avg       0.80      0.83      0.78     36541
 
 #### Training score vs Test score
 
+![](/sentiment_mining/images/train_vs_test.PNG)
 
 ### Randome Forest with Default Parameters
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.

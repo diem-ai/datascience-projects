@@ -148,6 +148,28 @@ Pipeline(memory=None,
 
 
 ### Evaluation
+#### Classification Report
+````
+from sklearn.metrics import classification_report
+print(classification_report(y_test, predictions))
+
+                precision    recall  f1-score   support
+
+          -1       0.78      0.47      0.59      5259
+           0       0.51      0.02      0.05      3328
+           1       0.83      0.99      0.90     27954
+
+    accuracy                           0.83     36541
+   macro avg       0.71      0.49      0.51     36541
+weighted avg       0.80      0.83      0.78     36541
+
+````
+- Observation:
+    - Model predicts 83% accuracry on test set
+    - 
+
+#### Training score vs Test score
+
 
 ### Randome Forest with Default Parameters
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.

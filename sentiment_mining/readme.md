@@ -172,6 +172,8 @@ weighted avg       0.80      0.83      0.78     36541
 
 ![](/sentiment_mining/images/train_vs_test.PNG)
 
+- Observation: Logistic Regression Model performs a little bit better with test set and the gap betweem training score and testing score is not high. It can be said that Logistic Regression is not overfitting and it can learn data's pattern
+
 ### Randome Forest with Default Parameters
 - A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.
 - We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.

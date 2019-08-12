@@ -166,7 +166,9 @@ weighted avg       0.80      0.83      0.78     36541
 ````
 - Observation:
     - Model predicts 83% accuracry on test set
-    - 
+    - Postive reviews (class = 1): 99% reviews are predicted as postive and 83% of them are predicted truly possitive
+    - Negative reviews (class = -1): Model predicts 2% reviews negative and 51% of them are predicted truly negative
+    - Netrual reviews (class = 0): 47% reviews are predicted neutral and model predicts 78% correctly.
 
 #### Training score vs Test score
 

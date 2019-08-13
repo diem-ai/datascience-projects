@@ -8,12 +8,12 @@
   - Content based Model: Recommend movies with similar contents : genres, actors, actresses, crew
   
  - [Sentiment Mining](https://github.com/diem-ai/datascience-projects/tree/master/sentiment_mining)
-  - Explore Logistic Regression Classifier with postive/negative/neutral product's reviews
-  - Extrac topics in customer's review with Laten Dirichlet Allocation
-  - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
+    - Explore Logistic Regression Classifier with postive/negative/neutral product's reviews
+    - Extrac topics in customer's review with Laten Dirichlet Allocation
+    - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
   
-  - [Stock Analysis](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
-    - Query real time historical stocks and analyse their profitability and investment risk using time series
-    - Techniques: Data Visualization, Pandas Time Series
+ - [Stock Analysis](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
+   - Query real time historical stocks and analyse their profitability and investment risk using time series
+   - Techniques: Data Visualization, Pandas Time Series
     
   

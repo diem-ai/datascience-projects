@@ -16,9 +16,8 @@
     - [Tuning parameters with Gridsearch](/sentiment_mining#tuning-parameters-with-gridsearch)
     - [Evaluation Metrics](/sentiment_mining#Evaluation)
 4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#topic-modeling-with-latent-dirichlet-allocation-(LDA))
-5. [Files Description](/sentiment_mining#5-file-description)
-6. [Installation](/sentiment_mining#6-installation)
-7. [Run code/Notebook in Local](/sentiment_mining#7-run-in-local)
+5. [Installation](/sentiment_mining#6-installation)
+6. [Run code/Notebook in Local](/sentiment_mining#7-run-in-local)
 7. [Run code/Notebook in Google Colab](/sentiment_mining#7-run-in-local)
 8. [Reference](/sentiment_mining#7-run-in-local)
 
@@ -325,8 +324,36 @@ topic: 10
     - topic 10: good feedbacks. The same to topic 1
 - At the end, we have 8 topics after tunning parameters and the result sounds interesting.
 
+## 5. Installation
+- Software requirement:
+    - Python >= 3.7
+    - Jupyter Notebook
+- Dependencies:
+    - pandas
+    - matplotlib
+    - numpy
+    - scikit-learn
+    - wordcloud
+    - nltk
+    - gensim
+## 6. Run code/Notebook in Local
+In a terminal or command window, navigate to the top-level project directory sentiment_mining/ (that contains this README) and run one of the following commands:
 
-## 5. Reference
+````
+ipython notebook sentiment_prediction2.ipynb
+ipython notebook sentiment_LDA.ipynb.ipynb
+````
+or
+````
+jupyter notebook sentiment_prediction2.ipynb
+jupyter notebook sentiment_LDA.ipynb.ipynb
+````
+## 7. Run code/Notebook in Google Colab
+
+https://colab.research.google.com/drive/1SdzL7lEXEXVg9yUFGWr8MQmyD4zzl50U#scrollTo=y8DAaQv49w7n&uniqifier=2
+https://colab.research.google.com/drive/1E2pC8Vgh_uIPSiO9iHqLj7bLiFfFCxH8
+
+## 8. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington
 - [LDA's documentation by gensim](https://radimrehurek.com/gensim/models/ldamodel.html#usage-examples)

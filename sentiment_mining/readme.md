@@ -15,7 +15,7 @@
     - [Cross Validation](/sentiment_mining#cross-validation)
     - [Tuning parameters with Gridsearch](/sentiment_mining#tuning-parameters-with-gridsearch)
     - [Evaluation Metrics](/sentiment_mining#Evaluation)
-4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#topic-modeling-with-latent-dirichlet-allocation-(LDA))
+4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#4-topic-modeling-with-latent-dirichlet-allocation-lda)
 5. [Installation](/sentiment_mining#6-installation)
 6. [Run code/Notebook in Local](/sentiment_mining#7-run-in-local)
 7. [Run code/Notebook in Google Colab](/sentiment_mining#7-run-in-local)

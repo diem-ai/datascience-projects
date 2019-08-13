@@ -180,9 +180,31 @@ weighted avg       0.80      0.83      0.78     36541
 
 - Observation: Logistic Regression Model performs a little bit better with test set and the gap betweem training score and testing score is not high. It can be said that Logistic Regression is not overfitting and it can learn data's pattern
 
-### Randome Forest with Default Parameters
-- A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the - predictive accuracy and control over-fitting.
-- We imported scikit-learn RandomForestClassifier method to model the training dataset with random forest classifier.
+#### Important features
+````
+def get_top_tfidf_words(feature_names, sample, top_n=2):  
+  """
+  feature_names: an array of words. for example: ["love", "great", "product"]
+  sample: sparse matrix
+  top_n: (int) number of selected words
+  
+  """
+  # sort indices pf sample, backward the sorted array and select top_n items
+  sorted_nzs = np.argsort(sample.data)[:-(top_n+1):-1]
+  # return an sub-array with sorted indices
+  return feature_names[sample.indices[sorted_nzs]]
+
+feature_names = np.array(tfidf.get_feature_names())
+
+top_n_words = get_top_tfidf_words(feature_names, tfidf.transform(x_test), 30)
+
+print("Top 15 words : {}".format(top_n_words))
+
+get_wordcloud(' '.join(top_n_words))
+
+````
+![](/sentiment_mining/images/top_n_words.PNG)
+
 #### Conclusion
 ## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
 - Topic modeling is a type of statistical model that is used to extract topics that are collections of words collection of documents. Latent Dirichlet Allocation is one of implementation of Topic Modelling.

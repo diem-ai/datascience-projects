@@ -17,7 +17,7 @@
     - [Evaluation Metrics](/sentiment_mining#Evaluation)
 4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#4-topic-modeling-with-latent-dirichlet-allocation-lda)
 5. [Installation](/sentiment_mining#5-installation)
-6. [Run code/Notebook in Local](/sentiment_mining#6-run-in-local)
+6. [Run code/Notebook in Local](/sentiment_mining#6-run-codenotebook-in-local)
 7. [Run code/Notebook in Google Colab](/sentiment_mining#7-run-codenotebook-in-google-colab)
 8. [Reference](/sentiment_mining#8-reference)
 

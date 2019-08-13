@@ -9,7 +9,7 @@
     - [Data Distribution & Observation](/sentiment_mining#data-distribution)
     - [Processing Data](/sentiment_mining#processing-data)
 3. [Machine Learning Pipeline](/sentiment_mining#3-machine-learning-pipeline)
-    - [Train/Set Split](/sentiment_mining#split-dataset-into-train-set)
+    - [Train/Set Split](/sentiment_mining#split-dataset-into-trainset)
     - [Term Frequency Document Matrix](/sentiment_mining#term-frequency-document-matrix)
     - [Logistic Regession](/sentiment_mining#logistic-regession)
     - [Cross Validation](/sentiment_mining#cross-validation)

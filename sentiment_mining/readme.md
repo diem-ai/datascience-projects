@@ -1,6 +1,20 @@
 
-
 # Mining sentiment review & Unpacking the topics in customer's reviews
+
+## Table of content
+1. [Motivation](/sentiment_mining#1-motivation)
+2. [Data Exploration](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#2-data-exploration)
+    - [Data Source](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-source)
+    - [Data Structure](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-structure)
+    - [Data Distribution & Observation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#data-distribution)
+    - [Normalization & Outliers Detection](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#normalization--outliers-detection)
+3. [Feature Engineering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#3-feature-engineering)
+4. [Clustering with Agglomerative Clustering](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#4-clustering-with-agglomerative-clustering-algorithm)
+5. [Files Description](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#5-file-description)
+6. [Installation](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#6-installation)
+7. [Run code/Notebook in Local](#7-run-in-local)
+7. [Run code/Notebook in Google Colab](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
+8. [Reference](https://github.com/diem-ai/mlprojects/tree/master/customer_segement#7-run-in-local)
 
 ## 1. Motivation
 - Somehow, I'm interested in what customers think about products after they bought them. I want to know which products feedbacks are positive and negative in a month so that I can develop or adjust the marketing or promotion campaign. 

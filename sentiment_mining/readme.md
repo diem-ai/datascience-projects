@@ -205,7 +205,6 @@ get_wordcloud(' '.join(top_n_words))
 ````
 ![](/sentiment_mining/images/top_n_words.PNG)
 
-#### Conclusion
 ## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
 - Topic modeling is a type of statistical model that is used to extract topics that are collections of words collection of documents. Latent Dirichlet Allocation is one of implementation of Topic Modelling.
 - Latent Dirichlet allocation (LDA) is a topic model that generates topics based on word frequency from a set of documents. LDA is particularly useful for finding reasonably accurate mixtures of topics within a given document set.

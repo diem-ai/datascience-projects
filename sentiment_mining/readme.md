@@ -56,7 +56,17 @@ plt.show()
     - The higher rating was, the fewer words the reviews were
  
 ### Preprocessing Data
-- The reviews contains many unexpected characters such as puntuation, numeric or meaningless words. 
+- Remove punctuation Python's built-in string functionality.
+- Remove alpha numerical words
+- Lower and remove stop words
+- Lemmatizer: It reduces the inflected words properly ensuring that the root word belongs to the language. We need to provide the context in which you want to lemmatize that is the parts-of-speech (POS). This is done by giving the value for pos parameter in wordnet_lemmatizer.lemmatize
+
+````
+from text_accessory import processing_text
+products['processed_review'] = products['review'].apply(processing_text)
+
+````
+
 ## 3. Machine Learning Pipeline
 ### Split Dataset into train/set
 - Divide dataset into 80% train and 20% test. 

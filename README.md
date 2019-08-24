@@ -13,7 +13,10 @@
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
   
  - [Stock Analysis](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
-   - Query real time historical stocks and analyse their profitability and investment risk using time series
-   - Techniques: Data Visualization, Pandas Time Series
+   - Collect historical data of 20 stocks of S&P 500 in 5 years
+   - Use the Principle Component Analysis from Sklearn to structure the eigen vector features of covariance matrix of stocks
+   - Caculate the weights of each porfolio in PCA components
+   - Compute the sharp ratio, anual return and anual volatility of each porfolio
+   - Techniques: Data scrapping, Data Visualization, Principal Components Analysis
     
   

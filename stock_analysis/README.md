@@ -246,7 +246,7 @@ def eigen_porfolio_return(idx, pca, stock_tickers):
 - checkout the project : git clone https://github.com/diem-ai/Risk-and-Return-ROI.git
 - In a terminal or command window, navigate to the top-level project directory sentiment_mining/ (that contains this README) and run one of the following commands:
     ````
-    ipython notebook sentiment_prediction2.ipynb
+    ipython notebook sharp-ratio_PCA.ipynb
     ````
 
 ### Run the Notebook in Google Colab

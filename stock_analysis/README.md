@@ -229,11 +229,11 @@ def eigen_porfolio_return(idx, pca, stock_tickers):
  
 ### Installation & Software Requirements
 
-## Requirements
+#### Requirements
 - Python >= 3.7
 - Jupyter Notebook
 
-## Dependencies
+#### Dependencies
 - pandas
 - matplotlib
 - seaborn
@@ -244,9 +244,15 @@ def eigen_porfolio_return(idx, pca, stock_tickers):
 
 ### Run Notebook in the local
 - checkout the project : git clone https://github.com/diem-ai/Risk-and-Return-ROI.git
- 
-### Run the Notebook in Google Colab
+- In a terminal or command window, navigate to the top-level project directory sentiment_mining/ (that contains this README) and run one of the following commands:
+    ````
+    ipython notebook sentiment_prediction2.ipynb
+    ````
 
+### Run the Notebook in Google Colab
+- Click on the link below to run the notebook on Colab
+
+https://colab.research.google.com/drive/1RG5PlDLkiaZHtFQuew5iJfsV5yX6taNB#scrollTo=x5yOIQMG1SsN&uniqifier=10
 
 
 

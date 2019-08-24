@@ -159,7 +159,7 @@ important_idx = [np.argmax(pca.components_[i]) for i in range(n_pcs)]
 important_features = [stock_tickers[important_idx[i]] for i in range(n_pcs)]
 pd.DataFrame({"PC {}".format(i+1): [important_features[i]] for i in range(n_pcs)}, index = ["Important Feature"]).T
 ````
-![](/stock_analysis/images/important_feature.PNG)
+![](/stock_analysis/images/important_feature.png)
     
 ### Eigen Porfolio Returns Calculation
 - Each PCA component contains the eigen weight of stocks. It can be represented in a matrix whose rows are variances and columns are tickers. The result is acquired by 3 steps:

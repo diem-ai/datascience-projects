@@ -2,13 +2,13 @@
 # Table of Content
 1. [Motivation](/stock_analysis#motivation)
 2. [Project Description](/stock_analysis#project-description)
-3. [Data Collection](stock_analysis#data-collection)
+3. [Data Collection](/stock_analysis#data-collection)
 4. [Asset and Returns Caculation & Standardization](/stock_analysis#asset-returns-calculation--standardization)
-5. [Machine Learning Model](stock_analysis#machine-learning-model)
-6. [Eigen Porfolio Returns Calculation](stock_analysis#eigen-porfolio-returns-calculation)
-7. [Installation & Software Requirements](stock_analysis#installation--software-requirements)
-8. [Run Notebook in the local](stock_analysis#run-notebook-in-the-local)
-9. [Run the Notebook in Google Colab](stock_analysis#run-the-notebook-in-google-colab)
+5. [Machine Learning Model](/stock_analysis#machine-learning-model)
+6. [Eigen Porfolio Returns Calculation](/stock_analysis#eigen-porfolio-returns-calculation)
+7. [Installation & Software Requirements](/stock_analysis#installation--software-requirements)
+8. [Run Notebook in the local](/stock_analysis#run-notebook-in-the-local)
+9. [Run the Notebook in Google Colab](/stock_analysis#run-the-notebook-in-google-colab)
 
 
 

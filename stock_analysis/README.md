@@ -58,14 +58,14 @@ def get_data(tickers, start_date, end_date):
   return df.dropna()
 ````
 - New dataframe with 5 first rows:
-<5rows.png>
+![](/stock_analysis/images/5rows.PNG)
 
 - Plot cumulative returns to observe the total change in price over 5 years:
 ````
 (asset_prices/asset_prices.iloc[0]).plot(figsize=(15, 8))
 
 ````
-<cumulative_returns.png>
+![](/stock_analysis/images/cumulative_returns.PNG)
 
 ### Asset Returns Calculation & Standardization
 
@@ -136,7 +136,7 @@ df_var_explained = pd.DataFrame({"Explained Variance": pca.explained_variance_[:
                                       , index = index)
 df_var_explained.plot()
 ````
-<image><image><image>
+![](/stock_analysis/images/explained_variance_ratio.PNG)![](/stock_analysis/images/cum_explained_variance_ratio.PNG)![](/stock_analysis/images/explained_variance.PNG)
     
 - <b>Observation</b>: As you we can see, the very first bar represented in the first principal component is the highest one. Taken alone, it explains about 38% of the total variance of the stock returns in the index. The rest of eigenvalues are much smaller than the first one, and explain much smaller fraction of the total variance.
 
@@ -147,7 +147,7 @@ important_idx = [np.argmax(pca.components_[i]) for i in range(n_pcs)]
 important_features = [stock_tickers[important_idx[i]] for i in range(n_pcs)]
 pd.DataFrame({"PC {}".format(i+1): [important_features[i]] for i in range(n_pcs)}, index = ["Important Feature"]).T
 ````
-<image>
+![](/stock_analysis/images/important_feature.PNG)
     
 ### Eigen Porfolio Returns Calculation
 - Each PCA component contains the eigen weight of stocks. It can be represented in a matrix whose rows are variances and columns are tickers. The result is acquired by 3 steps:
@@ -225,7 +225,7 @@ def eigen_porfolio_return(idx, pca, stock_tickers):
  ````
  - Using optimize_porfolio() with testset, We got : Eigen portfolio #4 BRK.B with the highest Sharpe. Return = 32.35, Volatility = 46.24, Sharpe = 0.70
  - Plot the most optimized porfolio:
- <image>
+ ![](/stock_analysis/images/optimized_porfolio.PNG)
  
 ### Installation & Software Requirements
 

@@ -70,7 +70,8 @@ def get_data(tickers, start_date, end_date):
   return df.dropna()
 ````
 - New dataframe with 5 first rows:
-![](/stock_analysis/images/5rows.PNG)
+
+![](/stock_analysis/images/5rows.png)
 
 - Plot cumulative returns to observe the total change in price over 5 years:
 ````

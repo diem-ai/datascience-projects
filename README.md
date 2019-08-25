@@ -11,7 +11,12 @@
     - Explore Logistic Regression Classifier with postive/negative/neutral product's reviews
     - Extrac topics in customer's review with Laten Dirichlet Allocation
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
-  
+    
+  - [Spam classification](datascience-projects/spam_classification)
+    - Building Word2Vec, Bag of Word and Term Frequency - Inverse Term Frequency models on the corpus of text 
+    - Predicting unseen data with Support Vector Machine and KNearestNeighbor from 3 models
+    - Techniques: Data Cleaning, N-skip grams, NLP, Machine Learning
+    
  - [Portfolio Investment Optimization](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
    - Collect historical data of 20 stocks of S&P 500 in 5 years
    - Use the Principle Component Analysis from Sklearn to structure the eigen vector features of covariance matrix of stocks

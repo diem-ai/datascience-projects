@@ -6,6 +6,7 @@
   - Recommend movies to users using collaborative filtering and content based techinques
   - Collaborative filtering: Recommendation list is generated based on the most similar items to a user's already-rated items
   - Content based Model: Recommend movies with similar contents : genres, actors, actresses, crew
+  - Techniques: Data Cleaning, Data Visualization, NLP
   
  - [Sentiment Mining](https://github.com/diem-ai/datascience-projects/tree/master/sentiment_mining)
     - Explore Logistic Regression Classifier with postive/negative/neutral product's reviews

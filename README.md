@@ -12,7 +12,7 @@
     - Extrac topics in customer's review with Laten Dirichlet Allocation
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
   
- - [Stock Analysis](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
+ - [Portfolio Investment Optimization](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
    - Collect historical data of 20 stocks of S&P 500 in 5 years
    - Use the Principle Component Analysis from Sklearn to structure the eigen vector features of covariance matrix of stocks
    - Caculate the weights of each porfolio in PCA components

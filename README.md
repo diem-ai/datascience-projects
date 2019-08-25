@@ -12,7 +12,7 @@
     - Extrac topics in customer's review with Laten Dirichlet Allocation
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
     
-  - [Spam classification](/datascience-projects/spam_classification)
+  - [Spam classification](https://github.com/diem-ai/datascience-projects/tree/master/spam_classification)
     - Building Word2Vec, Bag of Word and Term Frequency - Inverse Term Frequency models on the corpus of text 
     - Predicting unseen data with Support Vector Machine and KNearestNeighbor from 3 models
     - Techniques: Data Cleaning, N-skip grams, NLP, Machine Learning

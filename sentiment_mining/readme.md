@@ -1,7 +1,7 @@
 
 # Mining sentiment review & Unpacking the topics in customer's reviews
 
-## Table of content
+## Content
 1. [Motivation](/sentiment_mining#1-motivation)
 2. [Project Description](/sentiment_mining#2-project-description)
 3. [Data Exploration](/sentiment_mining#2-data-exploration)

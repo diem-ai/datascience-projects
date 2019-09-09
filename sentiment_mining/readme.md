@@ -24,12 +24,13 @@
 ## 1. Motivation
 - Somehow, I'm interested in what customers think about products after they bought them. I want to know which products feedbacks are positive and negative in a month so that I can develop or adjust the marketing or promotion campaign. 
 - I'm also interested in not only whether people are talking with a positive, neutral, or negative feedbacks about the product, but also which particular aspects or features of the product people talk about. 
+- I also want to train model with reviews and it will generate positive/negative/neutral reviews
+
 ## 2. Project Description
 - The goal is to explore logistic regression and feature engineering with existing sklearn functions and unpack the topics in customer's review. with Laten Dirichlet Allocation. I will use product review data from Amazon.com to predict whether the sentiments about a product (from its reviews) are positive or negative or neutral.
-- Train a logistic regression model to predict the sentiment of product reviews.
-- Inspect the weights (coefficients) of a trained logistic regression model.
 - Make a prediction (both class and probability) of sentiment for a new product review.
 - Evaluation model's performance with accuracy score and classification report
+- Generate automatically different sentiments of review with [Markovify](https://github.com/jsvine/markovify)
 ## 3. Data Exploration
 ### Data Structure
 - Dataset has 183531 datapoints and 3 columns: name, review and rating

@@ -16,6 +16,8 @@
     - [Tuning parameters with Gridsearch](/sentiment_mining#tuning-parameters-with-gridsearch)
     - [Evaluation Metrics](/sentiment_mining#Evaluation)
 4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#4-topic-modeling-with-latent-dirichlet-allocation-lda)
+5. [Review Generator with Marko Chain](/sentiment_mining/#5-review-generator-with-marko-chain)
+
 5. [Installation](/sentiment_mining#5-installation)
 6. [Run code/Notebook in Local](/sentiment_mining#6-run-codenotebook-in-local)
 7. [Run code/Notebook in Google Colab](/sentiment_mining#7-run-codenotebook-in-google-colab)
@@ -24,7 +26,7 @@
 ## 1. Motivation
 - Somehow, I'm interested in what customers think about products after they bought them. I want to know which products feedbacks are positive and negative in a month so that I can develop or adjust the marketing or promotion campaign. 
 - I'm also interested in not only whether people are talking with a positive, neutral, or negative feedbacks about the product, but also which particular aspects or features of the product people talk about. 
-- I also want to train model with reviews and it will generate positive/negative/neutral reviews
+- I also want to generate positive/negative/neutral reviews with by implementing Marko Chain Generator
 
 ## 2. Project Description
 - The goal is to explore logistic regression and feature engineering with existing sklearn functions and unpack the topics in customer's review. with Laten Dirichlet Allocation. I will use product review data from Amazon.com to predict whether the sentiments about a product (from its reviews) are positive or negative or neutral.
@@ -325,7 +327,78 @@ topic: 10
     - topic 10: good feedbacks. The same to topic 1
 - At the end, we have 8 topics after tunning parameters and the result sounds interesting.
 
-## 5. Installation
+## 5. Review Generator with Marko Chain
+- A Markov chain can be thought of as a sequence of states with the property that at each state, the probability of transitioning to another (possibly the same) state depends only on the current state. In another word, the probability of generating next word depends on the current word.
+- The Marko Chain Generator is well-implemented with Markotify. Its primary use is for building Markov models of large corpora of text and generating random sentences.
+- We will create 3 generator models: positive , negative and neutral models:
+````
+import markovify as markov
+
+def make_marko_model(data):
+  
+  #transform array to text
+  text = "".join(str(line) for line in data)
+  return markov.Text(text)
+
+def make_negative_review_model():
+  
+  negative_reviews = products.loc[products.rating < 3, "clean_review"].values.flatten()
+  return make_marko_model(negative_reviews)
+
+def make_positive_review_model():
+  
+  positive_reviews = products.loc[products.rating > 3, "clean_review"].values.flatten()
+  return make_marko_model(positive_reviews)
+
+def make_neutral_review_model():
+  
+  neutral_reviews = products.loc[products.rating == 3, "clean_review"].values.flatten()
+  return make_marko_model(neutral_reviews)
+````
+- Now, we will try to generate some positive reviews from our code:
+````
+pos_rev_model =make_positive_review_model()
+# Print five randomly-generated sentences
+for i in range(5):
+    print(pos_rev_model.make_sentence())
+````
+- 5 sentences are printed out:
+````
+Maybe her diapers and keep pressure on my side anyways thinking about cutting my daughter in it gets used.
+A bit of a Wet Ones canister, my sons wall for support.
+We use these under his fleece sleep sack a ton!
+Our week gets jostled around when my babies favorite place in dishwasher.
+My daughterinlaw is expecting to be clean while looking totally adorable.The hideaway hanging straps are VERY pleased that I needed something that would easily fits into the babys room.
+````
+- They look not bad. We will continuely generate several negative reviews from Marko chain generator:
+````
+neg_rev_model = make_negative_review_model()
+for i in range(5):
+    print(neg_rev_model.make_sentence())
+````
+````
+So we found out a new seat that advertises itself as much for your little ones tender gums, a plastic sticker that rips up your whole monitor to anyone.
+So sad it couldnt even get it to be used with.
+My toddler destroyed them by hand is already coming apart from the cup holder on each side.It says somewhere in the car.
+The price she quoted me for two reasons.
+Even with the holes, it just turns off randomlyand its a pain to clean it, and after placing it back up so much mucas my son was able to keep him sitting back as well.
+````
+- Finally, we create neutral review marko generator and examine the outcome:
+````
+neu_rev_model = make_neutral_review_model()
+for i in range(5):
+  print(neu_rev_model.make_sentence())
+````
+````
+It is difficult to use a ziploc bag before placing them in yard, however, I returned the units dont immediately sync together.
+The sun visor on mine is just as if they bend right For the money, you could customize the speed options really falls short.
+I am not sure why this has been a little more attractive.
+All together to much time with it.
+Well, this mobile to continue to grow, and also depress the on button every minutes it just doesnt look comfortable..
+````
+
+
+## 6. Installation
 - Software requirement:
     - Python >= 3.7
     - Jupyter Notebook
@@ -337,7 +410,7 @@ topic: 10
     - wordcloud
     - nltk
     - gensim
-## 6. Run code/Notebook in Local
+## 7. Run code/Notebook in Local
 In a terminal or command window, navigate to the top-level project directory sentiment_mining/ (that contains this README) and run one of the following commands:
 
 ````
@@ -349,15 +422,16 @@ or
 jupyter notebook sentiment_prediction2.ipynb
 jupyter notebook sentiment_LDA.ipynb.ipynb
 ````
-## 7. Run code/Notebook in Google Colab
+## 8. Run code/Notebook in Google Colab
 
 https://colab.research.google.com/drive/1SdzL7lEXEXVg9yUFGWr8MQmyD4zzl50U#scrollTo=y8DAaQv49w7n&uniqifier=2
 https://colab.research.google.com/drive/1E2pC8Vgh_uIPSiO9iHqLj7bLiFfFCxH8
 
-## 8. Reference
+## 9. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington
 - [LDA's documentation by gensim](https://radimrehurek.com/gensim/models/ldamodel.html#usage-examples)
+- [Markotify](https://github.com/jsvine/markovify)
 
 
 

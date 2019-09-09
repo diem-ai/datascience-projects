@@ -88,7 +88,7 @@ products['processed_review'] = products['review'].apply(processing_text)
 
 ````
 
-## 3. Machine Learning Pipeline
+## 4. Machine Learning Pipeline
 ### Split Dataset into train/set
 - Divide dataset into 80% train and 20% test. 
 ```
@@ -236,7 +236,7 @@ get_wordcloud(' '.join(top_n_words))
 ````
 ![](/sentiment_mining/images/top_n_words.PNG)
 
-## 4. Topic Modeling with Latent Dirichlet Allocation (LDA)
+## 5. Topic Modeling with Latent Dirichlet Allocation (LDA)
 - Topic modeling is a type of statistical model that is used to extract topics that are collections of words collection of documents. Latent Dirichlet Allocation is one of implementation of Topic Modelling.
 - Latent Dirichlet allocation (LDA) is a topic model that generates topics based on word frequency from a set of documents. LDA is particularly useful for finding reasonably accurate mixtures of topics within a given document set.
 - In this project, I will use `gensim.models.ldamodel` to cluster the similar topics in reviews.
@@ -326,7 +326,7 @@ topic: 10
     - topic 10: good feedbacks. The same to topic 1
 - At the end, we have 8 topics after tunning parameters and the result sounds interesting.
 
-## 5. Review Generator with Marko Chain
+## 6. Review Generator with Marko Chain
 - A Markov chain can be thought of as a sequence of states with the property that at each state, the probability of transitioning to another (possibly the same) state depends only on the current state. In another word, the probability of generating next word depends on the current word.
 - The Marko Chain Generator is well-implemented with Markotify. Its primary use is for building Markov models of large corpora of text and generating random sentences.
 - We will create 3 generator models: positive , negative and neutral models:
@@ -397,7 +397,7 @@ Well, this mobile to continue to grow, and also depress the on button every minu
 ````
 
 
-## 6. Installation
+## 7. Installation
 - Software requirement:
     - Python >= 3.7
     - Jupyter Notebook
@@ -409,7 +409,7 @@ Well, this mobile to continue to grow, and also depress the on button every minu
     - wordcloud
     - nltk
     - gensim
-## 7. Run code/Notebook in Local
+## 8. Run code/Notebook in Local
 In a terminal or command window, navigate to the top-level project directory sentiment_mining/ (that contains this README) and run one of the following commands:
 
 ````
@@ -421,12 +421,12 @@ or
 jupyter notebook sentiment_prediction2.ipynb
 jupyter notebook sentiment_LDA.ipynb.ipynb
 ````
-## 8. Run code/Notebook in Google Colab
+## 9. Run code/Notebook in Google Colab
 
 https://colab.research.google.com/drive/1SdzL7lEXEXVg9yUFGWr8MQmyD4zzl50U#scrollTo=y8DAaQv49w7n&uniqifier=2
 https://colab.research.google.com/drive/1E2pC8Vgh_uIPSiO9iHqLj7bLiFfFCxH8
 
-## 9. Reference
+## 10. Reference
 - [LDA explanation in Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - Dataset and the lecture of Logistic Regression : Machine Learning Course - University of Washington
 - [LDA's documentation by gensim](https://radimrehurek.com/gensim/models/ldamodel.html#usage-examples)

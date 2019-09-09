@@ -17,11 +17,10 @@
     - [Evaluation Metrics](/sentiment_mining#Evaluation)
 4. [Topic Modeling with Latent Dirichlet Allocation (LDA)](/sentiment_mining#4-topic-modeling-with-latent-dirichlet-allocation-lda)
 5. [Review Generator with Marko Chain](/sentiment_mining/#5-review-generator-with-marko-chain)
-
-5. [Installation](/sentiment_mining#5-installation)
-6. [Run code/Notebook in Local](/sentiment_mining#6-run-codenotebook-in-local)
-7. [Run code/Notebook in Google Colab](/sentiment_mining#7-run-codenotebook-in-google-colab)
-8. [Reference](/sentiment_mining#8-reference)
+6. [Installation](/sentiment_mining#6-installation)
+7. [Run code/Notebook in Local](/sentiment_mining#7-run-codenotebook-in-local)
+8. [Run code/Notebook in Google Colab](/sentiment_mining#8-run-codenotebook-in-google-colab)
+9. [Reference](/sentiment_mining#9-reference)
 
 ## 1. Motivation
 - Somehow, I'm interested in what customers think about products after they bought them. I want to know which products feedbacks are positive and negative in a month so that I can develop or adjust the marketing or promotion campaign. 

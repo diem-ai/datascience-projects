@@ -1,5 +1,5 @@
 
-# Mining sentiment review & Unpacking the topics in customer's reviews
+# Predicting reviews & Unpacking the topics in customer's reviews & Generating reviews with Marko Chain 
 
 ## Content
 1. [Motivation](/sentiment_mining#1-motivation)

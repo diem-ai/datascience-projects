@@ -10,7 +10,8 @@
   
  - [Sentiment Mining](https://github.com/diem-ai/datascience-projects/tree/master/sentiment_mining)
     - Explore Logistic Regression Classifier with postive/negative/neutral product's reviews
-    - Extrac topics in customer's review with Laten Dirichlet Allocation
+    - Extrac topics in customer's review with Laten Dirichlet Allocation (LDA)
+    - Generate postitive/negative/neutral reviews by implementing Marko Chain Text Generator
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
     
   - [Spam classification](https://github.com/diem-ai/datascience-projects/tree/master/spam_classification)

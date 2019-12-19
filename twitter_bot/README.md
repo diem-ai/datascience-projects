@@ -55,9 +55,39 @@ def preprocessing(text):
  return text
 ````
 
+## Word2vec Model and Similarity Matrix
+- Initialize [Dicionary](https://radimrehurek.com/gensim/corpora/dictionary.html) from corpus of clean and tokenized questions. It maps each word with an unique id.
+- Transform dictionary into [TF-IDF model](https://radimrehurek.com/gensim/models/tfidfmodel.html). The purpose is to reduce the weight of words with high frequence in corpus.
+- Create worrd2vec model from questions corpus and build a sparse term similarity matrix using a term similarity index
+- Create bag-of-word matrix from corpus and meantime, transform it into TF-TDF matrix
+- Compute the distance between documents in corpus with Soft Cosine Similarities approach
+```
+def compute_sim_matrix(self):
+    '''    
+    if(self.model_type.lower() == "fasttext"):
+        model = FastText(self.questions) 
+    else:
+        model = Word2Vec(self.questions)
+    '''
+    self.dictionary = Dictionary(self.questions)
+    self.tfidf = TfidfModel(dictionary = self.dictionary)
+    word2vec_model = Word2Vec(self.questions
+                        , workers=cpu_count()
+                        , min_count=5
+                        , size=300
+                        , seed=12345)
 
-## Word2vec model
+    sim_index = WordEmbeddingSimilarityIndex(word2vec_model.wv)
+    sim_matrix = SparseTermSimilarityMatrix(sim_index
+                                                , self.dictionary
+                                                , self.tfidf
+                                                , nonzero_limit=100)
+    bow_corpus = [self.dictionary.doc2bow(document) for document in self.questions]
 
+    tfidf_corpus = [self.tfidf[bow] for bow in bow_corpus]
+
+    self.docsim_index = SoftCosineSimilarity(tfidf_corpus, sim_matrix, num_best=10)
+```
  
 ## Demo
 # Install Requirements

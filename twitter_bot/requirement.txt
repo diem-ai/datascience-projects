@@ -1,0 +1,9 @@
+pandas
+gensim
+spacy
+os
+multiprocessing
+emoji
+re
+string
+nltk

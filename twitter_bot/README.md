@@ -90,6 +90,7 @@ def compute_sim_matrix(self):
 ```
  
 ## Demo
+
 # Install Requirements
 - Python >= 3.0
 - pip install requirement.txt

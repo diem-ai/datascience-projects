@@ -18,3 +18,5 @@ Collect 8166 twitter questions and their corresponding anwsers of eBay on [Kaggl
 - Go to twitter_bot folder and run command:
    - python main_bot.py
 # References
+- [gensim](https://radimrehurek.com/gensim/similarities/termsim.html#gensim.similarities.termsim.TermSimilarityIndex): a guideline to build word2vec model, create a matrix of similaries between documents and compute softcosine similarity betwee new document and similiarities matrix
+- [cosine similarity](https://www.machinelearningplus.com/nlp/cosine-similarity): an explanation about word2vec and cosine similarity and Euclidean

@@ -1,1 +1,3 @@
-wwww
+# Motivation
+Create a chatbot that can learn customers questions in the past and response an approriate anwser if the customer asks the similar question in dataset
+

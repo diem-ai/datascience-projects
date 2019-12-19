@@ -4,6 +4,9 @@ Create a chatbot that can learn customers questions in the past and response an 
 Collect 8166 twitter questions and their corresponding anwsers of eBay on [Kaggle](https://www.kaggle.com/thoughtvector/customer-support-on-twitter) to feed the model
 # Project Description
  - main_bot.py : run
-# Setup and Install Requirements
+# Install Requirements
+- pip install requirement.txt
+
+# Run Chatbot in local
 
 # References

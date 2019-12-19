@@ -3,7 +3,12 @@ Create a chatbot that can learn customers questions in the past and response an 
 # Data Source
 Collect 8166 twitter questions and their corresponding anwsers of eBay on [Kaggle](https://www.kaggle.com/thoughtvector/customer-support-on-twitter) to feed the model
 # Project Description
+## Data Preparation
+
+## Word2vec model
  - main_bot.py : run
+ 
+## Demo
 # Install Requirements
 - Python >= 3.0
 - pip install requirement.txt

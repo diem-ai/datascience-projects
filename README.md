@@ -1,3 +1,9 @@
+- [Wine Clustering](/wine_clustering): 
+  - Clustering wine color from their chemical properties. Using KMeans as feature engineering in Classification. Exploring how hyperparameter tuning and cross validation impact to Classification.  
+  - Blog: [KMeans - Clustering Method Part 1](https://diem-ai.blogspot.com/2020/03/kmeans-clustering-method-part-1.html)
+
+
+
 - [Customer Segmentation](https://github.com/diem-ai/datascience-projects/tree/master/customer_segement)
   - Explore the variation of different customers and predict dynamictically the segmentation throught their channel products and spending
   - Techniques: Data Visualization, Normalization, Princial Components Analysis and Clustering algorithm

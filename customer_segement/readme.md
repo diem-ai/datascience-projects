@@ -183,6 +183,4 @@ jupyter notebook customer_segment.ipynb
 ```
 - Notebook will be opened in your default browser.
 
-### 7. Reference
-- Machine Learning Nano degree Udacity
 

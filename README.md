@@ -3,10 +3,10 @@
   - Blog: [KMeans - Clustering Method Part 1](https://diem-ai.blogspot.com/2020/03/kmeans-clustering-method-part-1.html)
 
 
-
 - [Customer Segmentation](https://github.com/diem-ai/datascience-projects/tree/master/customer_segement)
-  - Explore the variation of different customers and predict dynamictically the segmentation throught their channel products and spending
-  - Techniques: Data Visualization, Normalization, Princial Components Analysis and Clustering algorithm
+  - Explore the variation of different customers and predict the segmentation throught their channel products and spending
+  - Blog: [Dimensionality Reduction with Principal Component Analysis](https://diem-ai.blogspot.com/2020/02/dimensionality-reduction-with-principal.html) 
+
 
 - [Movie Recommendation](https://github.com/diem-ai/datascience-projects/tree/master/movie-recommender)
   - Recommend movies to users using collaborative filtering and content based techinques

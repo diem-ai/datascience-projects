@@ -1,3 +1,12 @@
+    
+ - [Text Classification](https://github.com/diem-ai/text-classification)
+   - Analyse the data and create new features
+   - Transform text data into Term Frequency - Inverse Document Frequency, select the best feature with f_classif and fit the transformed data to Bayesian algorithm
+   - Transform text data into Word Embedding, select the best feature with f_classif and fit the transformed data to Bayesian algorithm
+   - Model improved 8% the accuracy score from 86% (baseline) to 94% (Word Embedding + Bayes)
+   - Check out ![Alt Blog](/blogger.png) for more detail: [Text Classification with TF-IDF, Word Embedding and Naive Bayes](https://diem-ai.blogspot.com/2020/05/text-classification-with-tf-idf-word.html)
+</br>   
+
 - [Wine Clustering](/wine_clustering) </br>
 Clustering wine color from their chemical properties. Using KMeans as feature engineering in Classification</br>
 Exploring how hyperparameter tuning and cross validation impact to the improvement</br>
@@ -6,7 +15,6 @@ Exploring how hyperparameter tuning and cross validation impact to the improveme
 - [Customer Segmentation](/customer_segement) </br>
 Explore the variation of different customers and predict the segmentation throught their channel products and spending</br>
  ![Alt Blog](/blogger.png) [Dimensionality Reduction with Principal Component Analysis](https://diem-ai.blogspot.com/2020/02/dimensionality-reduction-with-principal.html) 
-
 
 - [Movie Recommendation](https://github.com/diem-ai/datascience-projects/tree/master/movie-recommender)
   - Recommend movies to users using collaborative filtering and content based techinques
@@ -20,10 +28,8 @@ Explore the variation of different customers and predict the segmentation throug
     - Generate postitive/negative/neutral reviews by implementing Marko Chain Text Generator
     - Techniques: Data Visualization, Data Cleaning, Classification, Topic Modeling
     
-  - [Spam classification](https://github.com/diem-ai/datascience-projects/tree/master/spam_classification)
-    - Building Word2Vec, Bag of Word and Term Frequency - Inverse Term Frequency models on the corpus of text 
-    - Predicting unseen data with Support Vector Machine and KNearestNeighbor from 3 models
-    - Techniques: Data Cleaning, N-skip grams, NLP, Machine Learning
+    
+
     
  - [Portfolio Investment Optimization](https://github.com/diem-ai/datascience-projects/tree/master/stock_analysis)
    - Collect historical data of 20 stocks of S&P 500 in 5 years

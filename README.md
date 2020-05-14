@@ -3,7 +3,7 @@
    - Analyse the data and create new features
    - Transform text data into Term Frequency - Inverse Document Frequency, select the best feature with f_classif and fit the transformed data to Bayesian algorithm
    - Transform text data into Word Embedding, select the best feature with f_classif and fit the transformed data to Bayesian algorithm
-   - Model improved 8% the accuracy score from 86% (baseline) to 94% (Word Embedding + Bayes)
+   - Word Embedding + Bayes improves 8% accuracy from 86% (baseline) to 94% Meanwhile TF-IDF + Bayes improve 5% accuracy from 86% to 91%
    - Check out ![Alt Blog](/blogger.png) for more detail: [Text Classification with TF-IDF, Word Embedding and Naive Bayes](https://diem-ai.blogspot.com/2020/05/text-classification-with-tf-idf-word.html)
 </br>   
 

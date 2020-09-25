@@ -4,20 +4,20 @@ Hydrid Movie Recommendation system:
   - Content based similarity: This method bases on the information of movies such as: genres, stars and crew.
   - Both models use truncated singular value decomposition (SVD) to overcome dimensionality curse
   
-Project structure:
-   |___data
-          |___ normalised_movies.csv
-          |___ ratings_matrix.csv
-          |___ content_matrix.csv
-          |___ metadata_movies.csv
-          |___ ratings.csv
-          |___ credits.csv
-          |___ keywords.csv
-   |___ HybridRecommendationModel.ipynb
-   |___ HydridModelEvaluation.ipynb
-   |___ HybridRecommendationModel.html
-   |___ HydridModelEvaluation.html
-   |___ recommender.py
+Project structure: </br>
+   |___data  </br>
+          |___ normalised_movies.csv  </br>
+          |___ ratings_matrix.csv  </br>
+          |___ content_matrix.csv  </br>
+          |___ metadata_movies.csv  </br>
+          |___ ratings.csv </br>
+          |___ credits.csv </br>
+          |___ keywords.csv </br>
+   |___ HybridRecommendationModel.ipynb </br>
+   |___ HydridModelEvaluation.ipynb </br>
+   |___ HybridRecommendationModel.html </br>
+   |___ HydridModelEvaluation.html </br>
+   |___ recommender.py </br>
   
  Data/Files Notes:
   - metadata_movies.csv, ratings.csv, credits.csv and keywords can be found on Kaggle.com

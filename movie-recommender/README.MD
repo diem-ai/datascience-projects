@@ -5,7 +5,7 @@ Hydrid Movie Recommendation system:
   - Both models use truncated singular value decomposition (SVD) to overcome dimensionality curse
   
 Project structure: </br>
-   |___data  </br>
+   |_____data  </br>
           |___ normalised_movies.csv  </br>
           |___ ratings_matrix.csv  </br>
           |___ content_matrix.csv  </br>
